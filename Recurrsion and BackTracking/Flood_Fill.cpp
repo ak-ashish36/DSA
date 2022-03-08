@@ -10,14 +10,15 @@ void floodfill(vector<vector<int>> arr,int i,int j, vector<vector<bool>> visited
         return;
     }
     visited[i][j]=true;
-    floodfill(arr,i-1,j,visited,ans+"t");
     floodfill(arr,i+1,j,visited,ans+"d");
     floodfill(arr,i,j-1,visited,ans+"l");
     floodfill(arr,i,j+1,visited,ans+"r");
+    floodfill(arr,i-1,j,visited,ans+"u");
+
     visited[i][j]=false;
 }
 int main(){
-   vector<vector<int>> arr={{0,1,1},{0,0,1},{1,0,0},{0,1,0}} ;
+   vector<vector<int>> arr={{0,1,1,1},{0,0,1,0},{0,0,1,1},{1,0,0,0}};
    int row=arr.size();
    int col=arr[0].size();
 
