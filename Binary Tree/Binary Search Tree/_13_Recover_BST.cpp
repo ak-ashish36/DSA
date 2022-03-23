@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+using namespace std;
+struct TreeNode{
+    int val;
+    TreeNode*left,*right;
+    TreeNode(int val=0){
+        this->val=val;
+        left=right=NULL;
+    }
+};
+class Solution {
+private: 
+    TreeNode* first;
+    TreeNode* prev;
+    TreeNode* middle;
+    TreeNode* last; 
+private: 
+    void inorder(TreeNode* root) {
+        if(root == NULL) return; 
+        
+        inorder(root->left);
+        
+        if (prev != NULL && (prev->val > root->val)){
+            // If this is first violation, mark these two nodes as
+            // 'first' and 'middle'
+            if(first == NULL){
+                first = prev;
+                middle = root;
+            }
+            // If this is second violation, mark this node as last
+            else
+                last = root;
+        }
+        prev = root;
+        inorder(root->right); 
+    }
+public:
+    void recoverTree(TreeNode* root) {
+        first = middle = last = NULL; 
+        prev = new TreeNode(INT_MIN); 
+        inorder(root);
+        if(first && last) swap(first->val, last->val); 
+        else if(first && middle) swap(first->val, middle->val); 
+    }
+};
+int main(){
+     
+    return 0;
+}
