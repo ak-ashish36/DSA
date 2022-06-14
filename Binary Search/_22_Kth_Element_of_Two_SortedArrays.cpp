@@ -83,7 +83,6 @@ double findKthSortedArrays(vector<int>& nums1, vector<int>& nums2,int key) {
         }
     }
     return 0.0;
-   
 }
 int main(){
     vector<int>nums1 = {100, 112, 256, 349, 770};

@@ -1,3 +1,4 @@
+//https://youtu.be/B-nqY6IYqVw
 #include<bits/stdc++.h>
 using namespace std;
 void selectionSort(int arr[],int n){
@@ -21,7 +22,7 @@ void print(int arr[],int n){
     cout<<endl;
 }
 int main(){
-    int arr[]={23,4,6,14,7,11,34,9};
+    int arr[]={4,1,9,2,3};
     int n= sizeof(arr)/sizeof(int);
     print(arr,n);
     selectionSort(arr,n);

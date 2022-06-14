@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//Redundant brackets - useless brackets
 bool findRedundantBrackets(string &s){
     stack<char> st;
     for(int i=0; i<s.length(); i++) {
@@ -26,7 +27,7 @@ bool findRedundantBrackets(string &s){
     return false;
 }
 int main(){
-    string exp="(c*(a+b))";
+    string exp="(a+(a+b))";
     cout<<findRedundantBrackets(exp);
      
     return 0;

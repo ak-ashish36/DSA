@@ -7,7 +7,7 @@ int maxProfit(vector<int>& arr) {
         for(int j=i+1;j<arr.size();j++){
             if(arr[j]-arr[i]>max_profit){
                 max_profit=arr[j]-arr[i];
-                
+
             }
         }
     }

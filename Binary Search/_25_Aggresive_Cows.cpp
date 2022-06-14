@@ -17,11 +17,10 @@ bool isPossible(vector<int> arr,int cows,int minDist) {
 int findDistance(vector<int> arr,int cows){
     sort(arr.begin(),arr.end());
     int n= arr.size();
-    int start = 1, end = arr[n - 1] - arr[0];
+    int start = 1, end = arr[n - 1] - arr[0];   //Range : 1 to max distance
     int result=-1;
     while (start <= end) {
         int mid = (start + end) >> 1;
-
         if (isPossible(arr,cows,mid)){
             result=mid;
             start = mid + 1;

@@ -55,7 +55,7 @@ int majorityElement3(vector<int>& nums) {
 }
 int main(){
     vector<int> nums;
-    nums={6,5,5};
+    nums={2,2,1,1,1,2,2};
     cout<<majorityElement3(nums);
     
    return 0;

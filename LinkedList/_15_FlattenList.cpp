@@ -43,29 +43,30 @@ void insertAtBottomBack(ListNode* &head,int val){
         ptr->bottom=node;
         node->bottom=NULL;
 }
-void insertAtTail(ListNode* &Tail,ListNode * &currentnode){
-    Tail->bottom=currentnode;
-    Tail=currentnode;
-}
+
 // T=O(n+m) S=O(1)
 ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     ListNode *newList = new ListNode();
     ListNode *newListTail = newList;
     while(list1!=NULL || list2!=NULL){
         if(list1==NULL){
-            insertAtTail(newListTail,list2);
+            newListTail->bottom=list2;
+            newListTail=list2;
             break;
         }
         else if(list2==NULL){
-            insertAtTail(newListTail,list1);
+            newListTail->bottom=list1;
+            newListTail=list1;
             break;
         }
         else if(list1->val >= list2->val){
-            insertAtTail(newListTail,list2);
+            newListTail->bottom=list2;
+            newListTail=list2;
             list2=list2->bottom;
         }
         else if(list1->val < list2->val){
-            insertAtTail(newListTail,list1);
+            newListTail->bottom=list1;
+            newListTail=list1;
             list1=list1->bottom;
         }
     }
@@ -80,7 +81,7 @@ ListNode *flatten(ListNode *root){
     root = mergeTwoLists(root, root->next); 
     // return the root 
     // it will be in turn merged with its left 
-        return root; 
+    return root; 
 }
 int main(){
     ListNode* head=NULL;
@@ -104,7 +105,6 @@ int main(){
 
     ListNode* flatlist=flatten(head);
     print(head);
-
     // print(flatlist);
     return 0;
 }

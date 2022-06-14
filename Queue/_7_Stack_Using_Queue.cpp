@@ -49,7 +49,7 @@ class Stack2{
     }
     void push(int val){
         q.push(val);
-        for(int i=0;i<q.size();i++){
+        for(int i=0;i<q.size()-1;i++){
             q.push(q.front());
             q.pop();
         }
@@ -70,7 +70,7 @@ class Stack2{
     }
 };
 int main(){
-    Stack s;
+    Stack2 s;
    
     s.push(1);
     s.push(2);

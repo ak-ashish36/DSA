@@ -81,6 +81,6 @@ int main(){
     insertAtBack(head,5);
 
     print(head);
-    ListNode* node=rotate2(head,20000000);
+    ListNode* node=rotate2(head,2);
     print(node);
 }

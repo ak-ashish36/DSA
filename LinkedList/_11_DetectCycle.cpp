@@ -71,7 +71,4 @@ int main(){
     cout<<"Cycle detected\n";
     else
     cout<<"Cycle not detected\n";
-    // print(head);
-   
-    return 0;
 }

@@ -56,7 +56,7 @@ ListNode* detectCycle2(ListNode* head) {
     while(fast->next != NULL && fast->next->next != NULL) {
         fast = fast->next->next;
         slow = slow->next;
-        if(fast == slow) return slow;
+        if(fast == slow) return slow->next;
     }
     return NULL;
 }
@@ -67,7 +67,7 @@ int main(){
     insertAtBack(head,0);
     insertAtBack(head,-4);
 
-    // createCycle(head,1,3);
+    createCycle(head,1,3);
 
     if(detectCycle2(head))
     cout<<"Cycle detected\n";

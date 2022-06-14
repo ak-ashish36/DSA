@@ -20,7 +20,12 @@ public:
     }
     //Better Omptimization with less space
     void merge2(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        vector <int> mergedArr;
+        if(m==0){
+            nums1=nums2; 
+            return; 
+        }
+        if(n==0)
+            return; 
         int x=0;
         for(int i=0;i<m;i++){
             if(nums1[i]>nums2[x]){

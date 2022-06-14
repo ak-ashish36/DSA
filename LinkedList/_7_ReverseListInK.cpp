@@ -56,21 +56,19 @@ ListNode * reverseKGroup2(ListNode*head,int k){
     if(head == NULL||head->next == NULL) return head;
     int length = lengthOfLinkedList(head);
     ListNode * dummy=new ListNode();
-    dummy->next = head;
-    ListNode*prev=dummy;
-    ListNode*curr;
-    ListNode*next;
-     while(length >= k) {
-         curr=prev->next;
-         next=curr->next;
-        for(int i=1;i<k;i++) {
-            curr->next = next->next;
-            next->next = prev->next;
-            prev->next = next;
-            next = curr->next;
+    dummy->next=head;
+    ListNode *prev=dummy,*curr=dummy,*next=dummy;
+    while(length>=k){
+        curr=prev->next;
+        next=curr->next;
+        for(int i=1;i<k;i++){
+            curr->next=next->next;
+            next->next=prev->next;
+            prev->next=next;
+            next=curr->next;
         }
         prev=curr;
-        length -= k;
+        length-=k;
     }
     return dummy->next;
 }

@@ -16,12 +16,18 @@ int maxPathsum(TreeNode * root,int &maxi){
     if(root==NULL){
         return 0;
     }
-    int leftSum= max(0, maxPathsum(root->left,maxi));
-    int rightSum =max(0, maxPathsum(root->right,maxi));
+    if (!root->left && !root->right) return root->val;
 
-    maxi=max(maxi,leftSum+rightSum+root->val);
+    int leftSum= maxPathsum(root->left,maxi);
+    int rightSum =maxPathsum(root->right,maxi);
 
-    return root->val+max(leftSum,rightSum);
+    if(root->left && root->right){
+        maxi=max(maxi,leftSum+rightSum+root->val);
+        return root->val+max(leftSum,rightSum);
+    }
+    //If any of the two children is empty, return root sum for root being on one side
+    return (!root->left)? rightSum + root->val:leftSum + root->val;
+    
 }
 int main(){
     TreeNode *root = new TreeNode(-15);
@@ -37,10 +43,11 @@ int main(){
     root->right->right->right->left = new TreeNode(4);
     root->right->right->right->right = new TreeNode(-1);
     root->right->right->right->right->left = new TreeNode(10);
+
     int maxi=0;
     maxPathsum(root,maxi);
     cout<<maxi;
-    //3->6->9;
+    //6 -> -8 -> 5 -> 1;
     return 0;
 }
 //        -15
@@ -49,7 +56,7 @@ int main(){
 //     |  | |  |
 //    -8  1 3   9
 //   |  |        |
-//  4    6        0
+//  4    6      -60
 //               | |
 //              4  -1
 //                 |

@@ -21,14 +21,14 @@ int main(){
    // int arr[] ={1,2,3,4};
    // int n=sizeof(arr)/sizeof(int);
 
-   int* arr = new int[5];   //Dynamically Allocating array of size 5 with garbage value
+//    int* arr = new int[5];   //Dynamically Allocating array of size 5 with garbage value
    // int* arr = new int[5]{};   //Dynamically Allocating array of size 5 initializing with 0
    // int n=sizeof(*arr)/sizeof(int);
    // print1d(arr,n);
 
-   // int arr[2][3]={{1,2,3},{4,5,6}};
+   int arr[2][3]={{1,2,3},{4,5,6}};
    // int arr[2][3]={{-1,3}};
-   // print2d(arr);
+   print2d(arr);
 
    return 0;
 }

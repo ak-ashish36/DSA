@@ -41,9 +41,9 @@ ListNode* intersectionPresent(ListNode* head1,ListNode* head2) {
     //intersection is not present between the lists return null
     return NULL;
 }
-//Time Complexity: O(m*n)  Space Complexity: O(n)
+//Time Complexity: O(m+n)  Space Complexity: O(n)
 ListNode* intersectionPresent2(ListNode* head1,ListNode* head2) {
-      unordered_set<ListNode*> st;
+    unordered_set<ListNode*> st;
     while(head1 != NULL) {
        st.insert(head1);
        head1 = head1->next;
@@ -53,15 +53,18 @@ ListNode* intersectionPresent2(ListNode* head1,ListNode* head2) {
         head2 = head2->next;
     }
     return NULL;
+    
 }
 //Time Complexity: O(2*max(length of list1,length of list2))  Space Complexity: O(1)
 ListNode* intersectionPresent3(ListNode* head1,ListNode* head2) {
     ListNode* d1 = head1;
-    ListNode* d2 = head2;
-
+    ListNode* d2 = head2; 
     while(d1 != d2) {
-        d1 = d1 == NULL? head2:d1->next;
-        d2 = d2 == NULL? head1:d2->next;
+        if(d1==NULL)d1=head2;
+        else d1=d1->next;
+
+        if(d2==NULL)d2=head1;
+        else d2=d2->next;
     }
     return d1;
 }
@@ -79,7 +82,7 @@ int main(){
     head2->next->next->next=head1->next->next;
     print(head1);
     print(head2);
-    ListNode* node=intersectionPresent2(head1,head2);
+    ListNode* node=intersectionPresent3(head1,head2);
     print(node);
     return 0;
 }

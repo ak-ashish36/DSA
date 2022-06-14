@@ -31,7 +31,7 @@ void print(int arr[],int n){
     cout<<endl;
 }
 int main(){
-    int arr[]={23,4,6,14,7,11,34,9};
+    int arr[]={4,6,2,5,7,9,1,3};
     int n= sizeof(arr)/sizeof(int);
     print(arr,n);
     quickSort(arr,0,n-1);

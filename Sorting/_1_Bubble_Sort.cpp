@@ -16,7 +16,7 @@ void print(int arr[],int n){
     cout<<endl;
 }
 int main(){
-    int arr[]={23,4,6,14,7,11,34,9};
+    int arr[]={4,3,7,1,5};
     int n= sizeof(arr)/sizeof(int);
     print(arr,n);
     bubbleSort(arr,n);

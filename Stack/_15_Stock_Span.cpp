@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//https://www.geeksforgeeks.org/the-stock-span-problem/
 vector<int> nearestGreaterLeftIndex(vector<int>arr){
     vector<int>ans;
     stack<pair<int,int>>s;

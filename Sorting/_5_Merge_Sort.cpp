@@ -6,7 +6,7 @@ void merge(int arr[],int low,int mid,int high){
     int i=low;
     int j=mid+1;
     int k=low;
-    int merged[10];
+    int merged[high];
     while(i<=mid && j<=high){
         if(arr[i]<arr[j]){
             merged[k++]=arr[i++];

@@ -1,3 +1,4 @@
+//https://www.interviewbit.com/problems/first-non-repeating-character-in-a-stream-of-characters/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -34,7 +35,7 @@ class Solution {
 };
 
 int main(){
-	string str="aabc";
+	string str="abcabc";
 	Solution obj;
 	string ans = obj.FirstNonRepeating(str);
 	cout << ans << "\n";

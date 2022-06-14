@@ -1,17 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool isPossible(vector <int>arr,int k,int max){
-    int student_count=1;
-    int sum=0;
-    for(int i=0;i<arr.size();i++){
-        sum+=arr[i];
-        if(sum>max){
-            student_count++;
-            sum=arr[i];
+bool isPossible(vector<int> &arr,int students,int pages) {
+    int cnt = 0;
+    int sumAllocated = 0; 
+    for(int i = 0;i<arr.size();i++) {
+        if(sumAllocated + arr[i] > pages) {
+            cnt++; 
+            sumAllocated = arr[i];
+            if(sumAllocated > pages) return false; 
         }
-        if(student_count>k){return false;}
+        else {
+            sumAllocated += arr[i];
+        }
     }
+    if(cnt  >= students) return false; 
     return true;
 }
 int books(vector <int> & arr, int k) {
@@ -27,7 +30,7 @@ int books(vector <int> & arr, int k) {
 
   //binary search
   while (start <= end) {
-    int mid = (start + end) >> 1;
+    int mid = start + (end-start)/2;
 
     if (isPossible(arr,k,mid )==true) {
       end = mid - 1;
@@ -41,7 +44,7 @@ int books(vector <int> & arr, int k) {
 }
 int main(){
     vector<int> arr = {10,20,30,40};
-    int k = 2;
+    int k =2;
     cout << "Minimum Possible Number is " << books(arr,k);
     return 0;
 }

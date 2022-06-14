@@ -41,22 +41,22 @@ int MinimumDiffElement(int arr[],int start,int end,int key){
     int prev=floor(arr,start,end,key);
     int next=ceil(arr,start,end,key);
 
-
+    cout<<prev<<" "<<next<<endl;
     int x=abs(prev-key);
     int y=abs(next-key);
-   
+
     cout<<x<<" "<<y<<endl;
-    if(x>y){
-        return next;
+    if(x<y){
+        return prev;
     }
     else{
-        return prev;
+        return next;
     }
 }
 int main(){
     int arr[]={1,3,8,11,15};
     int size=sizeof(arr)/sizeof(int);
 
-    cout<<MinimumDiffElement(arr,0,size-1,16);
+    cout<<MinimumDiffElement(arr,0,size-1,9);
     return 0;
 }
