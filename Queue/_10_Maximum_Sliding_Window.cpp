@@ -25,7 +25,7 @@ vector <int>maxSlidingWindow2(vector<int> & nums, int k) {
       dq.pop_front();
     } 
     
-    while (!dq.empty() && nums[dq.back()] < nums[i]){     //Always maintain decreasing order in queue
+    while (!dq.empty() && nums[dq.back()] < nums[i]){     //Always maintain decreasing order from front to back in queue
       dq.pop_back();
     }
     dq.push_back(i);

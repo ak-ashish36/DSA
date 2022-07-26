@@ -1,6 +1,6 @@
+////https://leetcode.com/problems/search-a-2d-matrix-ii/
 #include<bits/stdc++.h>
 using namespace std;
-
 pair<int,int>binarySearch2D(int arr[][4],int row,int col,int target){
     int i=0;
     int j=col-1;
@@ -20,11 +20,8 @@ pair<int,int>binarySearch2D(int arr[][4],int row,int col,int target){
             i++;
         }
     }
-
     return p;
 }
-
-
 int main(){
     int arr[][4]={{10,20,30,40},
                  {15,25,35,45},

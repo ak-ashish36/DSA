@@ -42,3 +42,9 @@ int main(){
 
 	return 0;
 } 
+/*	"a"      -   first non repeating character 'a'
+    "ab"     -   first non repeating character 'a'
+    "abc"    -   first non repeating character 'a'
+    "abca"   -   first non repeating character 'b'
+    "abcab"  -   first non repeating character 'c'
+    "abcabc" -   no non repeating character so '#' */
