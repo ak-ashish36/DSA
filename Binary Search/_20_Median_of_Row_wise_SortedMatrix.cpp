@@ -1,6 +1,8 @@
+//https://www.codingninjas.com/codestudio/problems/median-of-a-row-wise-sorted-matrix_1115473
+//https://www.interviewbit.com/problems/matrix-median/
+//https://youtu.be/63fPPOdIr2c
 #include<bits/stdc++.h>
 using namespace std;
-
 
 int countSmallerThanEqualto(int arr[],int start,int end ,int target){
     while(start<=end){

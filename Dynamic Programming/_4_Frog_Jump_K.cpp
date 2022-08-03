@@ -26,6 +26,7 @@ class Solution{
 int main(){
     vector<int>heights={10,30,40,50,20};
     int k=3;
+    //Output : 30
     Solution obj;
     cout<<obj.frogJumpK(5,k,heights);
     return 0;

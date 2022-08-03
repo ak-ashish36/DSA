@@ -36,6 +36,7 @@ public:
 };
 int main(){
     vector<int>arr={1,5,11,5};
+    //Output : True
     int n=arr.size();
     Solution obj;
     cout<<"Tabulation Sol: "<<obj.canPartition(arr)<<endl;

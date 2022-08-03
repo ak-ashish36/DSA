@@ -40,6 +40,7 @@ class Solution{
 int main(){
     vector<int>arr={5,2,6,4};
     int d=3;
+    //Output : 1
     Solution obj;   
     cout<<obj.countPartitions(arr,d);
     return 0;

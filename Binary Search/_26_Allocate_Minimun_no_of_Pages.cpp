@@ -1,45 +1,49 @@
+//https://practice.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
+//https://www.codingninjas.com/codestudio/problems/allocate-books_1090540
+//https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+//https://youtu.be/gYmWHvRHu-s
 #include<bits/stdc++.h>
 using namespace std;
 
 bool isPossible(vector<int> &arr,int students,int pages) {
-    int cnt = 0;
-    int sumAllocated = 0; 
-    for(int i = 0;i<arr.size();i++) {
-        if(sumAllocated + arr[i] > pages) {
-            cnt++; 
-            sumAllocated = arr[i];
-            if(sumAllocated > pages) return false; 
-        }
-        else {
-            sumAllocated += arr[i];
+    int count=1;
+    int currPageSum=0;
+    for(int i=0;i<arr.size();i++){
+        if(currPageSum+arr[i]<=pages){//If curr page sum is less than number of pages than we increase the pagesum
+            currPageSum+=arr[i];
+        }else{
+            count++;
+            currPageSum=arr[i];
+            if(count>students || currPageSum>pages ){
+                return false;
+            }
         }
     }
-    if(cnt  >= students) return false; 
     return true;
 }
 int books(vector <int> & arr, int k) {
   if (k > arr.size()) return -1;
-  int start = arr[0];
+
+  int start = 0;
   int end = 0;
 
-  //to find minimum value and sum of all pages
+  //to find maximum value and sum of all pages
   for (int i = 0; i < arr.size(); i++) {
     end = end + arr[i];
-    start = min(start, arr[i]);
+    start = max(start, arr[i]);
   }
 
   //binary search
   while (start <= end) {
     int mid = start + (end-start)/2;
 
-    if (isPossible(arr,k,mid )==true) {
+    if (isPossible(arr,k,mid )) {
       end = mid - 1;
     }
     else {
       start = mid + 1;
     }
   }
-
   return start;
 }
 int main(){

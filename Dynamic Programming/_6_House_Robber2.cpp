@@ -34,6 +34,7 @@ class Solution{
 };
 int main(){
     vector<int>arr={2,3,2};
+    //Output : 3
     Solution obj;
     cout<<obj.rob(arr);
     return 0;

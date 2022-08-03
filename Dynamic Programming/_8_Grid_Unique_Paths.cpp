@@ -75,6 +75,7 @@ public:
 };
 
 int main(){
+    //Output : 6
     Solution obj;
     cout<<obj.uniquePaths3(3,3);
     return 0;

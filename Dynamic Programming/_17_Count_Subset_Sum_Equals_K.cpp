@@ -48,6 +48,7 @@ class Solution{
 };
 int main(){
     vector<int>arr={1,2,3,4,5};
+    //Output : 3
     int n=arr.size();
     int k=10;
     Solution obj;

@@ -48,6 +48,7 @@ class Solution{
 int main(){
     vector<int>arr={2,3,7,8,10};
     int k=11;
+    //Output : 1
     int n=arr.size();
     Solution obj;
     vector<vector<int>>dp(n+1,(vector<int>(k+1,-1)));

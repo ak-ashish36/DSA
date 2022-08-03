@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/rotting-oranges
 //https://www.youtube.com/watch?v=pUAPcVlHLKA&ab_channel=takeUforward
 #include<bits/stdc++.h>
 using namespace std;
@@ -35,7 +36,9 @@ int orangesRotting(vector<vector<int>>& grid) {
 }
 
 int main(){
-    vector<vector<int>> v{ {2,1,1} , {1,1,0} , {0,1,1} } ;
+    vector<vector<int>> v{{2,1,1},
+                          {1,1,0},
+                          {0,1,1}} ;
     int rotting = orangesRotting(v);
     cout<<"Minimum Number of Minutes Required "<<rotting<<endl;
         

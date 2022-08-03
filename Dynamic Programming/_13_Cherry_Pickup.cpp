@@ -37,6 +37,7 @@ int main(){
                                {2,5,1},
                                {1,5,5},
                                {2,1,1}};
+    //Output : 24
     Solution obj;
     cout<<obj.cherryPickup(grid);                               
     return 0;

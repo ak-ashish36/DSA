@@ -75,6 +75,7 @@ int main(){
     vector<vector<int>>obstacleGrid = {{0,0,0},
                                        {0,1,0},
                                        {0,0,0}};
+    //Output : 2
     Solution obj;
     cout<<obj.uniquePathsWithObstacles2(obstacleGrid);
     return 0;

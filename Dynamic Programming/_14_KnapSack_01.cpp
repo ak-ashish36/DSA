@@ -63,7 +63,7 @@ int main(){
 	int wt[] = { 10, 20, 30 };
 	int W = 50;
 	int n = sizeof(val) / sizeof(val[0]);
-
+    //Output : 220
     vector<vector<int>>dp(n+1,(vector<int>(W+1,-1)));
 	Solution obj;
 	cout << obj.knapSack(W, wt, val, n,dp)<<endl;

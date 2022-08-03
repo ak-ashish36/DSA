@@ -43,6 +43,7 @@ class Solution{
 };
 int main(){
     vector<int>arr={2,1,1,2};
+    //Output : 4
     Solution obj;
     cout<<obj.rob2(arr);
     return 0;

@@ -1,3 +1,5 @@
+//https://www.codingninjas.com/codestudio/problems/aggressive-cows_1082559?leftPanelTab=1
+//https://youtu.be/wSOfYesTBRk
 #include <bits/stdc++.h>
 using namespace std;
 

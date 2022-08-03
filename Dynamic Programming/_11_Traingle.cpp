@@ -67,6 +67,7 @@ int main(){
                                  {3,4},
                                  {6,5,7},
                                  {4,1,8,3}};
+    //Output : 11
     Solution obj;
     cout<<obj.minimumTotal3(triangle);                                 
     return 0;

@@ -1,19 +1,22 @@
+//https://practice.geeksforgeeks.org/problems/the-painters-partition-problem1535/1
+//https://www.codingninjas.com/codestudio/problems/painter-s-partition-problem_1089557
+//Same Logic as Previous Problem (Allocate_Minimun_no_of_Pages)
 #include<bits/stdc++.h>
 using namespace std;
 bool isPossible(vector<int>&arr,int painters,int time) {
-    int cnt = 0;
-    int sumAllocated = 0; 
-    for(int i = 0;i<arr.size();i++) {
-        if(sumAllocated + arr[i] > time) {
-            cnt++; 
-            sumAllocated = arr[i];
-            if(sumAllocated > time) return false; 
-        }
-        else {
-            sumAllocated += arr[i];
+    int count=1;
+    int currSum=0;
+    for(int i=0;i<arr.size();i++){
+        if(currSum+arr[i]<=time){//If curr page sum is less than number of pages than we increase the pagesum
+            currSum+=arr[i];
+        }else{
+            count++;
+            currSum=arr[i];
+            if(count>painters || currSum>time ){
+                return false;
+            }
         }
     }
-     if(cnt  >= painters) return false; 
     return true; 
 }
 int paint(vector<int>&arr,int k) {
@@ -21,7 +24,7 @@ int paint(vector<int>&arr,int k) {
     int start=arr[0],end=0;
     int result=-1;
     for(int i=0;i<arr.size();i++){
-        start=min(start,arr[i]);
+        start=max(start,arr[i]);
         end=end+arr[i];
     }
     while(start<=end){

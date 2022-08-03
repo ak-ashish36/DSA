@@ -49,6 +49,7 @@ class Solution{
 };
 int main(){
     vector<int>arr={1,6,11,5};
+    //Output : 1
     Solution obj;
     cout<<obj.minSubsetDiff(arr);
     return 0;

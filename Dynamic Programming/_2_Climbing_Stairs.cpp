@@ -18,7 +18,9 @@ class Solution{
     }
 };
 int main(){
+    int n=5;
+    //Output : 8
     Solution obj;
-    cout<<obj.countDistinctWays(5);
+    cout<<obj.countDistinctWays(n);
     return 0;
 }

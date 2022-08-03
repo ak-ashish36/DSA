@@ -36,6 +36,7 @@ class Solution{
 };
 int main(){
     int n=7;
+    //Output : 13
     Solution obj;
     cout<<"Norma fibbsion : "<<obj.fibb(n)<<endl; 
     vector<int>dp(n+1,-1);

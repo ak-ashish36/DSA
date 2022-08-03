@@ -55,6 +55,7 @@ int main(){
     vector<vector<int>> points={{1,2,5}, 
                                 {3,1,1},
                                 {3,3,3}};
+    //Output : 11
     Solution obj;
     cout<<obj.ninjaTraining2(points.size(),points);
     return 0;
