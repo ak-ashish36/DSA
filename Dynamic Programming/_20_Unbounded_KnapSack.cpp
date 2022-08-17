@@ -1,5 +1,7 @@
+//Dp on Unbounded KnapSack
+//https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1
+//https://www.codingninjas.com/codestudio/problems/unbounded-knapsack_1215029/
 //https://youtu.be/OgvOZ6OrJoY
-//https://www.codingninjas.com/codestudio/problems/unbounded-knapsack_1215029
 #include<bits/stdc++.h>
 using namespace std;
 class Solution{

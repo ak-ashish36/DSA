@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/fibonacci-number/
+//https://practice.geeksforgeeks.org/problems/nth-fibonacci-number1335/1
 //https://youtu.be/tyB0ztf0DNY
 #include<bits/stdc++.h>
 using namespace std;
@@ -25,6 +27,7 @@ class Solution{
     }
     //Tabulation T=O(n)   S=O(n)
     int fibb3(int n){
+        if(n<2){return n;}
         vector<int>dp(n+1,-1);
         //Base Cases
         dp[0]=0;dp[1]=1;

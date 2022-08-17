@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/longest-common-subsequence
-//https://www.codingninjas.com/codestudio/problems/longest-common-subsequence_624879
+//Dp on Strings (Comparison/Replacement/Edit)
+//https://leetcode.com/problems/longest-common-subsequence/
+//https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1
+//https://www.codingninjas.com/codestudio/problems/longest-common-subsequence_624879/
 //https://youtu.be/NPZn9jBrX8U
 #include<bits/stdc++.h>
 using namespace std;

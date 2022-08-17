@@ -1,5 +1,6 @@
-//https://leetcode.com/problems/longest-palindromic-subsequence
-//https://www.codingninjas.com/codestudio/problems/longest-palindromic-subsequence_842787
+//https://leetcode.com/problems/longest-palindromic-subsequence/
+//https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1
+//https://www.codingninjas.com/codestudio/problems/longest-palindromic-subsequence_842787/
 //https://youtu.be/6i_T5kkfv4A
 #include<bits/stdc++.h>
 using namespace std;

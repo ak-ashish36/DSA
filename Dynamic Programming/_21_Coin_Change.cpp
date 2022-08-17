@@ -1,5 +1,6 @@
 //https://leetcode.com/problems/coin-change/
-//https://www.codingninjas.com/codestudio/problems/minimum-elements_3843091
+//https://practice.geeksforgeeks.org/problems/number-of-coins1824/1
+//https://www.codingninjas.com/codestudio/problems/minimum-elements_3843091/
 //https://youtu.be/myPeWb3Y68A
 #include<bits/stdc++.h>
 using namespace std;

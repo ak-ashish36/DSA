@@ -1,5 +1,6 @@
-//https://leetcode.com/problems/wildcard-matching
-//https://www.codingninjas.com/codestudio/problems/wildcard-pattern-matching_701650
+//https://leetcode.com/problems/wildcard-matching/
+//https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1
+//https://www.codingninjas.com/codestudio/problems/wildcard-pattern-matching_701650/
 //https://youtu.be/ZmlQ3vgAOMo
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,6 @@
-//https://leetcode.com/problems/distinct-subsequences
-//https://www.codingninjas.com/codestudio/problems/subsequence-counting_3755256
+//https://leetcode.com/problems/distinct-subsequences/
+//https://practice.geeksforgeeks.org/problems/distinct-occurrences/1
+//https://www.codingninjas.com/codestudio/problems/subsequence-counting_3755256/
 //https://youtu.be/nVG7eTiD2bY
 #include<bits/stdc++.h>
 using namespace std;

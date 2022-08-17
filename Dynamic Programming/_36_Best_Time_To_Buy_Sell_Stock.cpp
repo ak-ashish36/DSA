@@ -1,4 +1,6 @@
+//Dp on Stocks
 //https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+//https://www.codingninjas.com/codestudio/problems/stocks-are-profitable_893405/
 //https://youtu.be/excAOvwF_Wk
 #include<bits/stdc++.h>
 using namespace std;

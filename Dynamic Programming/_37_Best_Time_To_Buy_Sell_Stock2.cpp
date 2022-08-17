@@ -1,4 +1,5 @@
 //https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii
+//https://www.codingninjas.com/codestudio/problems/selling-stock_630282/
 //https://youtu.be/nGJmxkUJQGs
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/validate-binary-search-tree/
+//https://youtu.be/f-sj7I5oXEI
 #include<bits/stdc++.h>
 using namespace std;
 struct TreeNode{

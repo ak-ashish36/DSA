@@ -1,4 +1,6 @@
-//https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii
+//https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+//https://practice.geeksforgeeks.org/problems/buy-and-sell-a-share-at-most-twice/1
+//https://www.codingninjas.com/codestudio/problems/buy-and-sell-stock_1071012/
 //https://youtu.be/-uQGzhYj8BQ
 #include<bits/stdc++.h>
 using namespace std;
@@ -71,7 +73,6 @@ public:
 //Space Optimization T:O(n*2*3) S: O(2*3)=O(1)
     int maxProfit3(vector<int>& prices) {
         int n=prices.size();
-        // Creating a 3d - dp of size [n][2][3]
         vector<vector<int>>ahead(2,vector<int>(3,0)),curr(2,vector<int>(3,0));
         
         //Base Cases

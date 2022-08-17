@@ -1,4 +1,5 @@
-// https://leetcode.com/problems/unique-paths-ii/
+//https://leetcode.com/problems/unique-paths-ii/
+//https://www.codingninjas.com/codestudio/problems/maze-obstacles_977241/
 //https://youtu.be/TmhpgXScLyY
 #include<bits/stdc++.h>
 using namespace std;

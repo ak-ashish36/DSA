@@ -1,3 +1,6 @@
+//https://leetcode.com/problems/maximal-rectangle/
+//https://practice.geeksforgeeks.org/problems/max-rectangle/1
+//https://www.codingninjas.com/codestudio/problems/maximum-size-rectangle-sub-matrix-with-all-1-s_893017/
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> nearestSmallerRightIndex(vector<int>arr){

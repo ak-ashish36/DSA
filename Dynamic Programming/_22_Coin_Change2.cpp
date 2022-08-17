@@ -1,4 +1,6 @@
 //https://leetcode.com/problems/coin-change-2/
+//https://practice.geeksforgeeks.org/problems/coin-change2448/1
+//https://www.codingninjas.com/codestudio/problems/ways-to-make-coin-change_630471/
 //https://youtu.be/HgyouUi11zk
 #include<bits/stdc++.h>
 using namespace std;

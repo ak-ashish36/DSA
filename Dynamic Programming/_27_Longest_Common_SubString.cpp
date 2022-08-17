@@ -1,4 +1,5 @@
-//https://www.codingninjas.com/codestudio/problems/longest-common-substring_1235207
+//https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1
+//https://www.codingninjas.com/codestudio/problems/longest-common-substring_1235207/
 //https://youtu.be/_wP9mWNPL5w
 #include<bits/stdc++.h>
 using namespace std;

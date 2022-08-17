@@ -1,5 +1,5 @@
+//https://www.codingninjas.com/codestudio/problems/frog-jump_3621012/
 //https://youtu.be/EgG3jsGoPvQ
-//https://www.codingninjas.com/codestudio/problems/frog-jump_3621012?leftPanelTab=1
 #include<bits/stdc++.h>
 using namespace std;
 class Solution{
@@ -51,7 +51,6 @@ class Solution{
         }
 
         return dp[n-1];
-
     }
     
 };

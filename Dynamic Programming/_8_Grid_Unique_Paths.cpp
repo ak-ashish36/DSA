@@ -1,5 +1,6 @@
-//https://www.codingninjas.com/codestudio/problems/total-unique-paths_1081470
 //https://leetcode.com/problems/unique-paths/submissions/
+//https://practice.geeksforgeeks.org/problems/count-all-possible-paths-from-top-left-to-bottom-right3011/1
+//https://www.codingninjas.com/codestudio/problems/total-unique-paths_1081470/
 //https://youtu.be/sdE0A2Oxofw
 #include<bits/stdc++.h>
 using namespace std;

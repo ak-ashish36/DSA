@@ -1,4 +1,5 @@
 //https://leetcode.com/problems/triangle/
+//https://www.codingninjas.com/codestudio/problems/triangle_1229398/
 //https://youtu.be/SrP-PiLSYC0
 #include<bits/stdc++.h>
 using namespace std;

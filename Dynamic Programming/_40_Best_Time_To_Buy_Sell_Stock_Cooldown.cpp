@@ -1,4 +1,5 @@
 //https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
+//https://www.codingninjas.com/codestudio/problems/highway-billboards_3125969//
 //https://youtu.be/IGIe46xw3YY
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,4 +1,5 @@
-//https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee
+//https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+//https://www.codingninjas.com/codestudio/problems/rahul-and-his-chocolates_3118974
 //https://youtu.be/k4eK-vEmnKg
 #include<bits/stdc++.h>
 using namespace std;

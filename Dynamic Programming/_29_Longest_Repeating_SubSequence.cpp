@@ -1,4 +1,5 @@
-//https://www.codingninjas.com/codestudio/problems/longest-repeating-subsequence_1118110
+//https://www.codingninjas.com/codestudio/problems/longest-repeating-subsequence_1118110/
+//https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1
 //https://www.interviewbit.com/problems/repeating-subsequence/
 //https://youtu.be/hbTaCmQGqLg
 #include<bits/stdc++.h>

@@ -1,5 +1,6 @@
-//https://leetcode.com/problems/edit-distance
-//https://www.codingninjas.com/codestudio/problems/edit-distance_630420
+//https://leetcode.com/problems/edit-distance/
+//https://practice.geeksforgeeks.org/problems/edit-distance3702/1
+//https://www.codingninjas.com/codestudio/problems/edit-distance_630420/
 //https://youtu.be/fJaKO8FbDdo
 #include<bits/stdc++.h>
 using namespace std;

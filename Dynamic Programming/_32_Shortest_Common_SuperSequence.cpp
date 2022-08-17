@@ -1,5 +1,6 @@
 //https://leetcode.com/problems/shortest-common-supersequence/
-//https://www.codingninjas.com/codestudio/problems/shortest-supersequence_4244493
+//https://practice.geeksforgeeks.org/problems/shortest-common-supersequence0322/1
+//https://www.codingninjas.com/codestudio/problems/shortest-supersequence_4244493/
 //https://youtu.be/xElxAuBcvsU
 #include<bits/stdc++.h>
 using namespace std;

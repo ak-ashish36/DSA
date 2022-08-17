@@ -1,4 +1,5 @@
-//https://www.codingninjas.com/codestudio/problems/maximum-path-sum-in-the-matrix_797998
+//https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1
+//https://www.codingninjas.com/codestudio/problems/maximum-path-sum-in-the-matrix_797998/
 //https://youtu.be/N_aJ5qQbYA0
 #include<bits/stdc++.h>
 using namespace std;

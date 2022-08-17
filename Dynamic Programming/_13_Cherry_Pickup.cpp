@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/cherry-pickup-ii/
-//https://www.codingninjas.com/codestudio/problems/ninja-and-his-friends_3125885
+//https://www.codingninjas.com/codestudio/problems/ninja-and-his-friends_3125885/
 //https://youtu.be/QGfn7JeXK54
 #include<bits/stdc++.h>
 using namespace std;

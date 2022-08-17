@@ -1,5 +1,6 @@
 //https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
-//https://www.codingninjas.com/codestudio/problems/minimum-insertions-to-make-palindrome_985293
+//https://practice.geeksforgeeks.org/problems/form-a-palindrome1455/1
+//https://www.codingninjas.com/codestudio/problems/minimum-insertions-to-make-palindrome_985293/
 //https://youtu.be/xPBLEj41rFU
 
 //For minimum number of Deletion to make string palindrome , Apply the same logic nothing changes

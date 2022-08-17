@@ -1,4 +1,5 @@
-//https://www.codingninjas.com/codestudio/problems/rod-cutting-problem_800284
+//https://practice.geeksforgeeks.org/problems/rod-cutting0840/1
+//https://www.codingninjas.com/codestudio/problems/rod-cutting-problem_800284/
 //https://youtu.be/SZqAQLjDsag
 #include<bits/stdc++.h>
 using namespace std;

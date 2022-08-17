@@ -1,32 +1,8 @@
 //https://leetcode.com/problems/longest-increasing-subsequence/
+//https://youtu.be/on2hvxBXJH4
 #include <bits/stdc++.h>
 using namespace std;
-class Solution {
-    int solve(vector<int>& nums,int ind,int prev,int n,vector<vector<int>> &dp){
-      // Base Case
-        if(ind == n)return 0;
-      // DP condition
-        if(dp[ind][prev+1] != -1)return dp[ind][prev+1];
-        
-        int take=0,nottake=0;
-        
-        // Not take 
-        nottake = 0+solve(nums,ind+1,prev,n,dp);
-        // Take if condition met and update previous
-        if(prev == -1 || nums[ind]>nums[prev])
-            take= 1+solve(nums,ind+1,ind,n,dp);
-        
-        return dp[ind][prev+1] = max(take,nottake);
-    }
-public:
-// Memoisation Solution   
-    int lengthOfLIS(vector<int>& nums){
-        int n = nums.size();
-        vector<vector<int>> dp(n,vector<int>(n+1,-1));
-        return solve(nums,0,-1,n,dp);
-    }
-};
-class Solution2{
+class Solution{
     int lowerbound(vector<int>&arr,int target){
         int s=0;
         int e=arr.size()-1;
@@ -61,7 +37,7 @@ public:
 int main(){
     vector<int>nums={10,9,2,5,3,7,101,18};
     //Output = 4 {2,3,7,18}
-    Solution2 obj;
+    Solution obj;
     cout<<obj.lengthOfLIS(nums);
     return 0;
 }

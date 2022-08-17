@@ -1,5 +1,6 @@
+//https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
+//https://www.codingninjas.com/codestudio/problems/1072980/
 //https://youtu.be/kvyShbFVaY8
-//https://www.codingninjas.com/codestudio/problems/1072980?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website
 #include<bits/stdc++.h>
 using namespace std;
 class Solution{

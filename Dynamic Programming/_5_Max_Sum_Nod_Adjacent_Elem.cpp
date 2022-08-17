@@ -1,9 +1,10 @@
 //https://leetcode.com/problems/house-robber/
+//https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1
+//https://www.codingninjas.com/codestudio/problems/maximum-sum-of-non-adjacent-elements_843261/
 //https://youtu.be/GrMBfJNk_NY
 #include<bits/stdc++.h>
 using namespace std;
 class Solution{
-    // Recursion T=(2^n) + Memoization   T=O(n)   S=O(n)+O(n) (Stack space + dp arr)
     int sol(int n,vector<int>& nums, vector<int>&dp){
         if(n==0){return nums[n];}
         if(n<0){return 0;}
@@ -14,7 +15,8 @@ class Solution{
         
         return dp[n]=max(pick,notpick);
     }
-    public:
+public:
+    // Recursion T=(2^n) + Memoization   T=O(n)   S=O(n)+O(n) (Stack space + dp arr)
     int rob(vector<int>& nums) {
         int n= nums.size();
         vector<int>dp(n,-1);
@@ -27,7 +29,7 @@ class Solution{
 
         dp[0]=nums[0];          //Base case
 
-        for(int i=1;i<nums.size();i++){
+        for(int i=1;i<n;i++){
             int pick;
             if(i==1){
                 pick =nums[i]+0;
