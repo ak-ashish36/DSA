@@ -1,18 +1,28 @@
+//https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1
+//https://www.codingninjas.com/codestudio/problems/kth-smallest-element_893056/
+//https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+//https://youtu.be/4BfL2Hjvh8g
 #include<bits/stdc++.h>
 using namespace std;
-int solution(vector<int>&arr,int k){
-    priority_queue<int>maxh;
-    for(int i=0;i<arr.size();i++){
-        maxh.push(arr[i]);
-        if(maxh.size()>k){
-            maxh.pop();
-        }
-    }
+class Solution {
+public:
+    int kthSmallest(vector<int>& nums, int k) {
+        priority_queue<int>maxH;
 
-    return maxh.top();
-}
+        for(int i=0;i<nums.size();i++){
+            maxH.push(nums[i]);
+            if(maxH.size()>k){
+                maxH.pop();
+            }
+        }
+        return maxH.top();
+    }
+};
 int main(){
-    vector<int>arr={3,2,2,3,1,2,4,5,5,6};
-    cout<<solution(arr,4);
+    vector<int>arr={7,10,4,3,20,15};
+    int k=3;
+    //Output =7 {3,4,7}
+    Solution obj;
+    cout<<obj.kthSmallest(arr,k);
     return 0;
 }
