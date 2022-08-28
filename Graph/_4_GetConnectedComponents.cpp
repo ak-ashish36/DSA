@@ -36,10 +36,8 @@ void addEdge(vector<vector<int>>&adj, int u, int v) {
   adj[v].push_back(u);
 }
 
-int main()
-{
+int main(){
     vector<vector<int>> adj(7);
-    
     addEdge(adj,0,1);
     addEdge(adj,2,3);
     addEdge(adj,4,5);

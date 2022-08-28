@@ -1,7 +1,8 @@
+//https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
 //https://youtu.be/UeE67iCK2lQ
 #include <bits/stdc++.h>
-
 using namespace std;
+
 class Solution {
   public:
     void bfs(int V, vector<vector<int>> adj, vector<int>&vis, vector<int>&ans) {
@@ -31,7 +32,7 @@ class Solution {
 
     vector<int>bfsOfGraph(int V,vector<vector<int>> adj){
 	    vector<int> ans; 
-	    vector<int> vis(V+1, 0); 
+	    vector<int> vis(V, 0); 
         for(int i=0;i<V;i++) {
             if(!vis[i]) bfs(i, adj,vis,ans); 
         }

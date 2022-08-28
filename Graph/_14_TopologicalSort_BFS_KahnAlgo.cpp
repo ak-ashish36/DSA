@@ -6,9 +6,10 @@ class Solution {
 public:
 	vector<int> topoSort(int N,vector<vector<int>>adj) {
         // Create indegree vector to marks degree of all nodes
+		//Indegree = No of edges directed towards node
 	    vector<int> indegree(N, 0); 
-	    for(int i = 0;i<N;i++) {
-	        for(auto it: adj[i]) {
+	    for(int i=0;i<N;i++) {
+	        for(auto it: adj[i]){
 	            indegree[it]++; 
 	        }
 	    }
@@ -45,7 +46,6 @@ int main(){
     addEdge(adj,4,1);
     addEdge(adj,3,1);
     addEdge(adj,2,3);
-
     Solution obj;
     vector<int>ans = obj.topoSort(6,adj);
     for(int i : ans){
