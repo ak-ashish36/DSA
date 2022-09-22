@@ -1,4 +1,5 @@
 //https://leetcode.com/problems/course-schedule/
+//https://practice.geeksforgeeks.org/problems/prerequisite-tasks/1
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
