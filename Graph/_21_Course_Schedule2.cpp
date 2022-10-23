@@ -1,4 +1,4 @@
-//https://leetcode.com/problems/course-schedule-ii/submissions/
+//https://leetcode.com/problems/course-schedule-ii/
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {

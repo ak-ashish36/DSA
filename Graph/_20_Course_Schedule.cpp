@@ -41,7 +41,7 @@ public:
 };
 int main(){
     vector<vector<int>>prerequisites = {{1,0},{0,1}};
-    int numCourses=4;
+    int numCourses=2;
     //Output= False
     Solution obj;
     cout<<obj.canFinish(numCourses,prerequisites);
